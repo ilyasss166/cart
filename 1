@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عبدالله السالمي | مستشار تسويق رقمي</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Tajawal', 'Noto Naskh Arabic', sans-serif;
+            background-color: #0a0a0a;
+            color: #f5f5f5;
+            overflow-x: hidden;
+        }
+        
+        .gold-gradient {
+            background: linear-gradient(90deg, #D4AF37 0%, #F9E076 50%, #D4AF37 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        .profile-img {
+            border: 3px solid #D4AF37;
+            box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+            transition: all 0.3s ease;
+        }
+        
+        .profile-img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 30px rgba(212, 175, 55, 0.5);
+        }
+        
+        .contact-btn {
+            transition: all 0.3s ease;
+            border: 1px solid #D4AF37;
+        }
+        
+        .contact-btn:hover {
+            background-color: #D4AF37;
+            color: #0a0a0a;
+            transform: translateY(-3px);
+        }
+        
+        .social-icon {
+            transition: all 0.3s ease;
+        }
+        
+        .social-icon:hover {
+            transform: scale(1.2) translateY(-5px);
+            color: #D4AF37;
+        }
+        
+        .fade-in {
+            animation: fadeIn 1s ease-in;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        .slide-up {
+            animation: slideUp 0.8s ease-out;
+        }
+        
+        @keyframes slideUp {
+            from { transform: translateY(30px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        
+        .qr-code {
+            transition: all 0.3s ease;
+        }
+        
+        .qr-code:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(212, 175, 55, 0.4);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col items-center justify-center p-4">
+    <div class="max-w-md w-full bg-gray-900 rounded-2xl overflow-hidden shadow-2xl border border-gray-800 fade-in">
+        <!-- Header with QR Code -->
+        <div class="flex justify-between items-center p-4 bg-gray-800">
+            <div class="text-xs text-gray-400">بطاقة أعمال رقمية</div>
+            <div class="qr-code bg-white p-1 rounded">
+                <svg width="40" height="40" viewBox="0 0 100 100">
+                    <!-- Simple QR code pattern (for demo) -->
+                    <rect x="10" y="10" width="80" height="80" fill="white"/>
+                    <rect x="15" y="15" width="70" height="70" fill="black"/>
+                    <rect x="20" y="20" width="10" height="10" fill="white"/>
+                    <rect x="35" y="20" width="10" height="10" fill="white"/>
+                    <rect x="50" y="20" width="10" height="10" fill="white"/>
+                    <rect x="20" y="35" width="10" height="10" fill="white"/>
+                    <rect x="35" y="35" width="10" height="10" fill="black"/>
+                    <rect x="50" y="35" width="10" height="10" fill="white"/>
+                    <rect x="20" y="50" width="10" height="10" fill="white"/>
+                    <rect x="35" y="50" width="10" height="10" fill="white"/>
+                    <rect x="50" y="50" width="10" height="10" fill="white"/>
+                </svg>
+            </div>
+        </div>
+        
+        <!-- Profile Section -->
+        <div class="p-6 flex flex-col items-center slide-up">
+            <div class="profile-img w-32 h-32 rounded-full bg-gray-700 mb-4 flex items-center justify-center overflow-hidden">
+                <i class="fas fa-user text-4xl text-gray-400"></i>
+            </div>
+            
+            <h1 class="text-2xl font-bold text-center gold-gradient">عبدالله السالمي</h1>
+            <p class="text-lg text-gray-300 mt-2">مستشار تسويق رقمي</p>
+            
+            <div class="w-16 h-1 bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent my-4"></div>
+            
+            <p class="text-center text-gray-300 leading-relaxed mt-2">
+                "أساعد الشركات الخليجية في رفع مبيعاتها عبر استراتيجيات تسويق ذكية"
+            </p>
+        </div>
+        
+        <!-- Contact Buttons -->
+        <div class="px-6 pb-6 grid grid-cols-3 gap-3 slide-up" style="animation-delay: 0.2s">
+            <a href="#" class="contact-btn flex flex-col items-center justify-center py-3 rounded-lg bg-transparent text-[#D4AF37]">
+                <i class="fab fa-whatsapp text-xl mb-1"></i>
+                <span class="text-xs">واتساب</span>
+            </a>
+            <a href="#" class="contact-btn flex flex-col items-center justify-center py-3 rounded-lg bg-transparent text-[#D4AF37]">
+                <i class="fas fa-envelope text-xl mb-1"></i>
+                <span class="text-xs">بريد إلكتروني</span>
+            </a>
+            <a href="#" class="contact-btn flex flex-col items-center justify-center py-3 rounded-lg bg-transparent text-[#D4AF37]">
+                <i class="fas fa-phone-alt text-xl mb-1"></i>
+                <span class="text-xs">اتصال</span>
+            </a>
+        </div>
+        
+        <!-- Social Media -->
+        <div class="px-6 pb-6 flex justify-center space-x-6 space-x-reverse slide-up" style="animation-delay: 0.4s">
+            <a href="#" class="social-icon text-gray-400 text-xl">
+                <i class="fab fa-snapchat"></i>
+            </a>
+            <a href="#" class="social-icon text-gray-400 text-xl">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="social-icon text-gray-400 text-xl">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="social-icon text-gray-400 text-xl">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </div>
+        
+        <!-- Footer -->
+        <div class="bg-gray-800 p-4 text-center text-xs text-gray-500 slide-up" style="animation-delay: 0.6s">
+            © 2023 عبدالله السالمي. جميع الحقوق محفوظة.
+        </div>
+    </div>
+
+    <script>
+        // Simple animation trigger on scroll
+        document.addEventListener('DOMContentLoaded', () => {
+            const elements = document.querySelectorAll('.slide-up');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = 1;
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            elements.forEach(el => {
+                el.style.opacity = 0;
+                el.style.transform = 'translateY(20px)';
+                observer.observe(el);
+            });
+            
+            // QR code click handler
+            document.querySelector('.qr-code').addEventListener('click', () => {
+                alert('QR code would link to this digital business card URL');
+            });
+        });
+    </script>
+</body>
+</html>
